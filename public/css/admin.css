@@ -1,0 +1,64 @@
+
+body main .addproduct {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 3rem;
+    border-radius: 50px;
+    gap: 2rem;
+    font-size: 2rem;
+}
+body main .addproduct input {
+    font-size: 2rem;
+}
+body main .addproduct select {
+    font-size: 2rem;
+}
+body main table{
+    display: table;
+    border: 1px solid white;
+    background-color: black;
+    max-width: 1000px;
+}
+body main .product_manager tr {
+    display: table-row;
+}
+body main .product_manager tr td {
+    border: 1px solid white;
+    padding: 5px;
+}
+body main .product_manager tr td img {
+    width: 40%;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.loginForm .input {
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    padding: 1rem;
+}
+.loginForm a {
+    color: white;
+    text-decoration: none;
+}
+body header {
+    display: flex;
+    max-width: 100vw;
+    height: 5vw;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+body main .order {
+    margin-left: auto;
+    margin-right: auto;
+}
+body main .order table tbody tr td {
+    border: 1px solid white;
+    padding: 2rem;
+}

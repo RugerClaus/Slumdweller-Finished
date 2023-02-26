@@ -1,0 +1,221 @@
+@import url('../animations/animations.css');
+@import url('../mobile/mobile.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+body {
+    background-color: black;
+    overflow: hidden;
+    color: white;
+}
+
+.sidebar {
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    background-color: rgb(0, 244, 126,1);
+    justify-content: space-evenly;
+
+    a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 50%;
+        }
+    }
+}
+
+.header {
+    position: fixed;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    form {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+
+        input {
+            border: none;
+            background-color: none;
+            background: none;
+            font-size: 2rem;
+            text-shadow: rgba(0, 244, 126,1)0px 0px 40px;
+            color: darkgray;
+        }
+        
+        input:hover {
+            cursor: pointer;
+            color: greenyellow;
+            text-shadow: rgba(0, 244, 126,) 0px 50px 40px;
+        }
+    }
+}
+
+main {
+    position: absolute;
+    bottom: 0;
+    height: 90vh;
+    width: 100vw;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    section {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid rgb(0, 244, 126,1);
+        border-right: 1px solid rgb(0, 244, 126,1);
+        height: fit-content;
+    }
+    .details {
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+        height: fit-content;
+        img {
+            width: 50%;
+        }
+        .subimages {
+            width: 40%;
+            align-self: center;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            max-height: 500px;
+            .subimage{
+                border: 1px solid white;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .landing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        animation: scale-in-center 2s;
+        img {
+            height: 40%;
+        }
+    }
+    .about {
+        flex-direction: column;
+        align-items: center;
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        img {
+            width: 40%;
+        }
+    }
+    .contact {
+        flex-direction: column;
+        gap: 2rem;
+        .contactformbox {
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                align-items: center;
+                input {
+                    font-size: 2rem;
+                }
+
+                textarea {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .tour {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        .tour_dates {
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+        }
+    }
+    .merch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            
+            
+
+            .btn {
+                font-size: 1rem;
+                max-width: fit-content;
+            }
+            
+            h2 {
+                font-size: 1rem;
+            }
+            
+            img {
+                width: 20%;
+            }
+        }
+    }
+    .cart {
+        display: flex;
+        flex-direction: column;
+        
+        
+            table {
+                border-spacing: 4rem;
+                tr {
+                    td {
+                        img 
+                        {
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+            .btn { 
+                width: fit-content;
+            }
+    }
+}
+::-webkit-scrollbar {
+    background-color: rgb(0, 244, 126,1);
+}
+.btn {
+    border: none;
+    background-color: rgb(0, 244, 126,1);
+    padding: 2px;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+}
+.btn:hover {
+    background-color: rgb(7, 155, 83);
+}

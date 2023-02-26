@@ -1,0 +1,217 @@
+@import url("../animations/animations.css");
+@import url("../mobile/mobile.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+  color: white;
+}
+
+.sidebar {
+  width: 5vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  background-color: rgb(0, 244, 126);
+  justify-content: space-evenly;
+}
+.sidebar a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sidebar a img {
+  width: 50%;
+}
+
+.header {
+  position: fixed;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+.header form {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+.header form input {
+  border: none;
+  background-color: none;
+  background: none;
+  font-size: 2rem;
+  text-shadow: rgb(0, 244, 126) 0px 0px 40px;
+  color: darkgray;
+}
+.header form input:hover {
+  cursor: pointer;
+  color: greenyellow;
+  text-shadow: rgb(0, 244, 126) 0px 50px 40px;
+}
+
+main {
+  position: absolute;
+  bottom: 0;
+  height: 90vh;
+  width: 100vw;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+main section {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgb(0, 244, 126);
+  border-right: 1px solid rgb(0, 244, 126);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .details {
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main .details img {
+  width: 50%;
+}
+main .details .subimages {
+  width: 40%;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-height: 500px;
+}
+main .details .subimages .subimage {
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+}
+main .landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-animation: scale-in-center 2s;
+          animation: scale-in-center 2s;
+}
+main .landing img {
+  height: 40%;
+}
+main .about {
+  flex-direction: column;
+  align-items: center;
+}
+main .about figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+main .about img {
+  width: 40%;
+}
+main .contact {
+  flex-direction: column;
+  gap: 2rem;
+}
+main .contact .contactformbox form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+main .contact .contactformbox form input {
+  font-size: 2rem;
+}
+main .contact .contactformbox form textarea {
+  font-size: 2rem;
+}
+main .tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+main .tour .tour_dates {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+main .merch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+main .merch .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+main .merch .product .btn {
+  font-size: 1rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+main .merch .product h2 {
+  font-size: 1rem;
+}
+main .merch .product img {
+  width: 20%;
+}
+main .cart {
+  display: flex;
+  flex-direction: column;
+}
+main .cart table {
+  border-spacing: 4rem;
+}
+main .cart table tr td img {
+  width: 200px;
+}
+main .cart .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(0, 244, 126);
+}
+
+.btn {
+  border: none;
+  background-color: rgb(0, 244, 126);
+  padding: 2px;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.btn:hover {
+  background-color: rgb(7, 155, 83);
+}/*# sourceMappingURL=index.css.map */
