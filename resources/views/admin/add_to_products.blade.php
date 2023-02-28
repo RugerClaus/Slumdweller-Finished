@@ -6,7 +6,7 @@
     <form action="/addproduct" method="post" class="addproduct" enctype="multipart/form-data">
         @csrf
         <input type="text" name="name" placeholder="Product Name: ">
-        <textarea name="desc" style="font-family: helvetica;" id="" placeholder="Description: " cols="30" rows="10"></textarea>
+        <textarea name="description" style="font-family: helvetica;" id="" placeholder="Description: " cols="30" rows="10"></textarea>
         <input type="file" name="image1" value="image">
         <input type="file" name="image2" value="image">
         <input type="file" name="image3" value="image">

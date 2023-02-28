@@ -11,7 +11,7 @@ class ProductController extends Controller
 
     public function create(Request $request)
     {
-        $inputFields = ['name', 'type', 'desc', 'qty', 'price'];
+        $inputFields = ['name', 'type', 'description', 'qty', 'price'];
         $data = [];
         foreach ($inputFields as $field) {
             $data[$field] = $request->input($field);
@@ -74,7 +74,7 @@ class ProductController extends Controller
     public function update(Request $request)
     {
         $id = $request->id;
-        $inputFields = ['name', 'type', 'desc', 'qty', 'price'];
+        $inputFields = ['name', 'type', 'description', 'qty', 'price'];
         $data = [];
         foreach ($inputFields as $field) {
             $data[$field] = $request->input($field);

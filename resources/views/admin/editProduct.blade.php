@@ -11,7 +11,7 @@
             <h4>Title</h4>
             <input type="text" name="name" value="{{$item->name}}">
             <h4>Description</h4>
-            <textarea name="desc" cols="30" rows="10">{{$item->description}}</textarea>
+            <textarea name="description" cols="30" rows="10">{{$item->description}}</textarea>
             <h4>Price</h4>
             <input type="decimal" name="price" value="{{$item->price}}">
             <h4>Stock Qty?</h4>

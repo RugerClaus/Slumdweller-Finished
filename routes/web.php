@@ -8,6 +8,7 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\StripePaymentController;
+use App\Http\Controllers\TicketController;
 use App\Http\Controllers\TourController;
 use Illuminate\Support\Facades\Route;
 
@@ -100,3 +101,5 @@ Route::post('/reply', [MailController::class, 'reply']);
 Route::post('/deleteEmail', [MailController::class, 'delete']);
 
 Route::get('/api/orders', [OrderController::class, 'index']);
+
+Route::post('/sendTicket', [TicketController::class, 'send'])->name('send.ticket');

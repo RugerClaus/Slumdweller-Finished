@@ -1,5 +1,6 @@
 @guest
     <p>Must Be logged in to see this page</p>
+    <a href="/login">Log In</a>
 @else
 
 
